@@ -592,7 +592,7 @@ end
 
 # issue #16686
 @test parse("try x
-             catch test()
+             catch; test()
                  y
              end") == Expr(:try,
                            Expr(:block,
