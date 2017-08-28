@@ -1739,6 +1739,8 @@ end
 
 @deprecate IOContext(io::IO, key, value) IOContext(io, key=>value)
 
+@deprecate countnz(x) count(!iszero, x)
+
 # issue #22791
 @deprecate select partialsort
 @deprecate select! partialsort!
